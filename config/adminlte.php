@@ -331,6 +331,26 @@ return [
             'text' => 'Vehículos',
             'url'  => 'vehiculos',
             'icon' => 'fas fa-truck',
+        ],
+        [
+            'text' => 'Socios de negocios',
+            'url'  => 'socios',
+            'icon' => 'fas fa-hands-helping',
+        ],
+        [
+            'text' => 'Viajes',
+            'url'  => 'viajes',
+            'icon' => 'fas fa-suitcase-rolling',
+        ],
+        [
+            'text' => 'Factura',
+            'url'  => 'factura',
+            'icon' => 'fas fa-file-invoice',
+        ],
+        [
+            'text' => 'Pagos',
+            'url'  => 'pagos',
+            'icon' => 'fas fa-money-bill-wave',
         ]
     ],
 
