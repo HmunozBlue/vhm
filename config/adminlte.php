@@ -328,9 +328,20 @@ return [
             'icon' => 'fas fa-restroom',
         ],
         [
-            'text' => 'Vehículos',
-            'url'  => 'vehiculos',
-            'icon' => 'fas fa-truck',
+            'text' => 'Transporte',
+            'icon' => 'fas fa-truck-moving',
+            'submenu'  => [
+                [
+                    'text' => 'Vehículos',
+                    'url'  => 'vehiculos',
+                    'icon' => 'fas fa-truck',
+                ],
+                [
+                    'text' => 'Furgones',
+                    'url'  => 'furgones',
+                    'icon' => 'fas fa-truck-loading',
+                ]
+            ],
         ],
         [
             'text' => 'Socios de negocios',
