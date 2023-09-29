@@ -53,9 +53,7 @@
                                 </div>
                                 <div class="header-info-right">
                                     <ul class="header-social">    
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                     </ul>
                                 </div>
@@ -75,14 +73,14 @@
                             <div class="col-xl-10 col-lg-10">
                                 <div class="menu-wrapper  d-flex align-items-center justify-content-end">
                                     <!-- Main-menu -->
-                                    <div class="main-menu d-none d-lg-block">
+                                    <!--<div class="main-menu d-none d-lg-block">
                                         <nav> 
                                             <ul id="navigation">                                                                                          
                                                 <li><a href="{{ route('welcome') }}">Home</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
                                         </nav>
-                                    </div>
+                                    </div>-->
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-20">
                                         <a href="{{ route('login') }}" class="btn header-btn">Login</a>
@@ -183,30 +181,30 @@
                                 <span class="flaticon-shipped"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Land Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a>Mudanzas.</a></h5>
+                                <p>Contamos con camiones con contenedor cerrado para el traslado de sus muebles. Hácia toda la republica.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center mb-50">
                             <div class="cat-icon">
-                                <span class="flaticon-ship"></span>
+                                <span class="flaticon-shipped"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Ship Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a>Carga general.</a></h5>
+                                <p>transportes de cajas, paquetería, cilindros, contamos con contenedores estandar de 20 y 40 pies.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center mb-50">
                             <div class="cat-icon">
-                                <span class="flaticon-plane"></span>
+                                <span class="flaticon-shipped"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Air Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a>Carga a granel.</a></h5>
+                                <p>Trasporte de sacos o bolsas de granos alimenticios.</p>
                             </div>
                         </div>
                     </div>
@@ -222,12 +220,12 @@
                         <div class="about-caption mb-50">
                             <!-- Section Tittle -->
                             <div class="section-tittle mb-35">
-                                <span>About Our Company</span>
-                                <h2>Safe Logistic & Transport  Solutions That Saves our Valuable Time!</h2>
+                                <span>A cerca de nosotros</span>
+                                <h2>Solución confiable para el transporte de su mercadería.</h2>
                             </div>
-                            <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
-                            <p>Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
-                            <a href="about.html" class="btn">More About Us</a>
+                            <p>Nuestra misión es hacer que las mercaderías que transportamos lleguen a su destino en el tiempo acordado y con el cuidado que se requiere durante el transporte, ofreciendo calidad y buen servicio al cliente.</p>
+                            <p>Somos una empresa de transporte de mercaderías a nivel nacional, El Salvador y Honduras. Que se dedica desde el 2006 a velar porque su mercadería llegue a su destino. </p>
+                            <!--<a href="about.html" class="btn">More About Us</a>-->
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -440,8 +438,8 @@
                     <div class="col-xl-7 col-lg-7">
                         <!-- Section Tittle -->
                         <div class="section-tittle section-tittle2 mb-25">
-                            <span>Clients Testimonials</span>
-                            <h2>What Our Clients Say!</h2>
+                            <span>Valores</span>
+                            <h2>Qué nos representan!</h2>
                         </div> 
                         <div class="h1-testimonial-active mb-70">
                             <!-- Single Testimonial -->
@@ -449,28 +447,77 @@
                                 <!-- Testimonial Content -->
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
-                                        <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
+                                        <p>velar por el embalaje y transporte seguro de su mercadería.</p>
                                     </div>
                                     <!-- founder -->
                                     <div class="testimonial-founder d-flex align-items-center">
-                                        <div class="founder-img">
+                                        <!--<div class="founder-img">
                                             <img src="assets/img/gallery/Homepage_testi.png" alt="">
+                                        </div>-->
+                                        <div class="section-tittle section-tittle2 mb-25">
+                                            <span>Compromiso.</span>
                                         </div>
-                                        <div class="founder-text">
-                                            <span>Jhaon smith</span>
-                                            <p>Creative designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial ">
+                                <!-- Testimonial Content -->
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <p>Usted se merece el mejor trato posible sin duda alguna.</p>
+                                    </div>
+                                    <!-- founder -->
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <!--<div class="founder-img">
+                                            <img src="assets/img/gallery/Homepage_testi.png" alt="">
+                                        </div>-->
+                                        <div class="section-tittle section-tittle2 mb-25">
+                                            <span>Amabilidad.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial ">
+                                <!-- Testimonial Content -->
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <p>Brindar todo el apoyo al cliente en todas las etapas del transporte de las mercaderías.</p>
+                                    </div>
+                                    <!-- founder -->
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <!--<div class="founder-img">
+                                            <img src="assets/img/gallery/Homepage_testi.png" alt="">
+                                        </div>-->
+                                        <div class="section-tittle section-tittle2 mb-25">
+                                            <span>Servicio.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial ">
+                                <!-- Testimonial Content -->
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <p>Excelencia en el trabajo realizado.</p>
+                                    </div>
+                                    <!-- founder -->
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <!--<div class="founder-img">
+                                            <img src="assets/img/gallery/Homepage_testi.png" alt="">
+                                        </div>-->
+                                        <div class="section-tittle section-tittle2 mb-25">
+                                            <span>Calidad.</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Single Testimonial -->
-                            <div class="single-testimonial ">
-                                <!-- Testimonial Content -->
+                            <!--<div class="single-testimonial ">
+                                Testimonial Content
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
                                         <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
                                     </div>
-                                    <!-- founder -->
                                     <div class="testimonial-founder d-flex align-items-center">
                                         <div class="founder-img">
                                             <img src="assets/img/gallery/Homepage_testi.png" alt="">
@@ -481,18 +528,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
-                    <!-- Form Start -->
-                    <div class="col-xl-4 col-lg-5 col-md-8">
-                        <div class="testimonial-form text-center">
-                            <h3>Always listening, always understanding.</h3>
-                            <input type="text" placeholder="Incoterms">
-                            <button name="submit" class="submit-btn">Request a Quote</button>
-                        </div>
-                    </div>
-                    <!-- Form End -->
                 </div>
             </div>
         </div>
@@ -508,7 +546,7 @@
                         <div class="row justify-content-between">
                             <div class="col-xl-6 col-lg-8 col-md-8">
                                 <div class="wantToWork-caption wantToWork-caption2">
-                                    <h2>We Understand The Importance Approaching Each Work!</h2>
+                                    <h2>Entendemos la importancia de llegar a tiempo.</h2>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-4">
@@ -518,7 +556,7 @@
                     </div>
                     <!-- Footer Menu -->
                     <div class="row d-flex justify-content-between">
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                        <!--<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>COMPANY</h4>
@@ -530,21 +568,21 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        </div>-->
+                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Open hour</h4>
+                                    <h4>Horarios de oficina.</h4>
                                     <ul>
-                                        <li><a href="#">Monday 11am-7pm</a></li>
-                                        <li><a href="#"> Tuesday-Friday 11am-8pm</a></li>
-                                        <li><a href="#"> Saturday 10am-6pm</a></li>
-                                        <li><a href="#"> Sunday 11am-6pm</a></li>
+                                        <li><a href="#">Lunes 07am-18:00 Hrs</a></li>
+                                        <li><a href="#"> Martes-Viernes 08am-16:00 Hrs</a></li>
+                                        <li><a href="#"> Sabado 08am-12:00 Hrs</a></li>
+                                        <li><a href="#"> Domingo cerrado.</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <!--<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>RESOURCES</h4>
@@ -557,7 +595,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <!-- logo -->
@@ -566,15 +604,15 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p class="info1">GThe trade war currently ensuing between te US anfd several natxions around thdhe globe, most fiercely with.</p>
+                                        <p class="info1">Convertirnos en aliados principales de nuestros clientes, ofreciéndoles seguridad y optimización de tiempos de entrega de sus mercaderías.</p>
                                     </div>
                                 </div>
                                 <!-- Footer Social -->
                                 <div class="footer-social ">
                                     <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <!--<a href=""><i class="fab fa-twitter"></i></a>-->
                                     <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <!--<a href="#"><i class="fab fa-instagram"></i></a>-->
                                 </div>
                             </div>
                         </div>
@@ -586,7 +624,7 @@
                         <div class="col-lg-12">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados <i class="fa fa-heart" aria-hidden="true"></i> <!--<a href="https://colorlib.com" target="_blank">Colorlib</a>-->
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
                         </div>
