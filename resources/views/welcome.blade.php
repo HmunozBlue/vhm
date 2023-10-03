@@ -108,10 +108,10 @@
                         <div class="row">
                             <div class="col-xl-9 col-lg-9">
                                 <div class="hero__caption">
-                                    <h1 >Su confianza <span>Sobre</span> Ruedas!</h1><br>
+                                    <h1>Su <span>confianza</span> Sobre Ruedas!</h1><br>
                                 </div>
                                 <div class="section-tittle section-tittle2 mb-25">
-                                    <h2>16 años de trayectoria nos respaldan.</h2>
+                                    <h2>17 años de trayectoria nos respaldan.</h2>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                 <span>A cerca de nosotros</span>
                                 <h2>Solución confiable para el transporte de su mercadería.</h2>
                             </div>
-                            <p>Nuestra misión es hacer que las mercaderías que transportamos lleguen a su destino en el tiempo acordado y con el cuidado que se requiere durante el transporte, ofreciendo calidad y buen servicio al cliente.</p>
+                            <p>La empresa VHM se dedica a Servicios de transporte pesado de carga a nivel nacional e internacional, mudanzas y fletes, importación, exportación, vehículo de repuestos y accesorios.</p>
                             <p>Somos una empresa de transporte de mercaderías a nivel nacional, El Salvador y Honduras. Que se dedica desde el 2006 a velar porque su mercadería llegue a su destino. </p>
                             <!--<a href="about.html" class="btn">More About Us</a>-->
                         </div>
