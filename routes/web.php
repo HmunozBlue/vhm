@@ -9,6 +9,7 @@ use App\Http\Controllers\RolController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\SocioController;
 use App\Http\Controllers\VehiclesController;
+use App\Http\Controllers\BoxCarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,4 +38,5 @@ Route::group(['middelware' => ['auth']], function(){
     Route::resource('personas', PersonaController::class);
     Route::resource('socios', SocioController::class);
     Route::resource('vehiculos', VehiclesController::class);
+    Route::resource('furgones', BoxCarController::class);
 });
