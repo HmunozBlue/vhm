@@ -350,8 +350,20 @@ return [
         ],
         [
             'text' => 'Viajes',
-            'url'  => 'viajes',
             'icon' => 'fas fa-suitcase-rolling',
+            'submenu'  => [
+                [
+                    'text' => 'Configuración Viaticos',
+                    'url'  => 'viaticos',
+                    'icon' => 'far fa-money-bill-alt',
+                    'can'  => 'crear-rol',
+                ],
+                [
+                    'text' => 'Ingreso Viajes',
+                    'url'  => 'viajes',
+                    'icon' => 'fas fa-globe-americas',
+                ],
+            ],
         ],
         [
             'text' => 'Factura',
