@@ -11,6 +11,7 @@ use App\Http\Controllers\SocioController;
 use App\Http\Controllers\VehiclesController;
 use App\Http\Controllers\BoxCarController;
 use App\Http\Controllers\TravelAllowanceController;
+use App\Http\Controllers\BillingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,4 +41,5 @@ Route::group(['middelware' => ['auth']], function(){
     Route::resource('vehiculos', VehiclesController::class);
     Route::resource('furgones', BoxCarController::class);
     Route::resource('viaticos', TravelAllowanceController::class);
+    Route::resource('facturas', BillingController::class);
 });
