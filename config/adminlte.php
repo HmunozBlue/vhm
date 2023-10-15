@@ -367,13 +367,14 @@ return [
         ],
         [
             'text' => 'Factura',
-            'url'  => 'factura',
+            'url'  => 'facturas',
             'icon' => 'fas fa-file-invoice',
         ],
         [
             'text' => 'Pagos',
             'url'  => 'pagos',
             'icon' => 'fas fa-money-bill-wave',
+            'can'  => 'crear-rol',
         ]
     ],
 
