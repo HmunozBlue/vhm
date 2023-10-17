@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\tour;
+use App\Models\travelAllowance;
+use App\Models\Vehicles;
+use App\Models\boxcars;
 use Illuminate\Http\Request;
 
 class TourController extends Controller
@@ -29,7 +32,10 @@ class TourController extends Controller
      */
     public function create()
     {
-        //
+        $tipeTrips = travelAllowance::paginate(5);
+        $vehicles = Vehicles::all();
+        $boxCars = boxcars::all();
+        return view('viajes.crear',compact('tipeTrips','vehicles','boxCars'));
     }
 
     /**
@@ -40,7 +46,29 @@ class TourController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        request()->validate([
+            'guies' => 'required',
+            'amount' => 'required',
+            'driverId' => 'required'
+        ]);
+
+        $newTour = new tour();
+
+        $newTour->guies = $request->guies;
+        $newTour->amount = $request->amount;
+        $newTour->tipeTour = $request->tipeTour;
+        $newTour->vehicleId = $request->vehicleId;
+        $newTour->boxCarId = $request->boxCarId;
+        $newTour->driverId = $request->driverId;
+        $newTour->asistantId = $request->asistantId;
+        $newTour->asistantId1 = $request->asistantId1;
+        $newTour->asistantId1 = $request->asistantId1;
+        $newTour->asistantId2 = $request->asistantId2;
+        $newTour->comment = $request->comment;
+
+        $newTour->save();
+
+        return redirect()->route('viajes.index');
     }
 
     /**
@@ -60,9 +88,12 @@ class TourController extends Controller
      * @param  \App\Models\tour  $tour
      * @return \Illuminate\Http\Response
      */
-    public function edit(tour $tour)
+    public function edit(tour $viaje)
     {
-        //
+        $tipeTrips = travelAllowance::paginate(5);
+        $vehicles = Vehicles::all();
+        $boxCars = boxcars::all();
+        return view('viajes.editar', compact('viaje','tipeTrips','vehicles','boxCars'));
     }
 
     /**
@@ -72,9 +103,18 @@ class TourController extends Controller
      * @param  \App\Models\tour  $tour
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, tour $tour)
+    public function update(Request $request, tour $viaje)
     {
-        //
+        
+        request()->validate([
+            'guies' => 'required',
+            'amount' => 'required',
+            'driverId' => 'required'
+        ]);
+
+        $viaje->update($request->all());
+
+        return redirect()->route('viajes.index');
     }
 
     /**
@@ -83,8 +123,9 @@ class TourController extends Controller
      * @param  \App\Models\tour  $tour
      * @return \Illuminate\Http\Response
      */
-    public function destroy(tour $tour)
+    public function destroy(tour $viaje)
     {
-        //
+        $viaje->delete();
+        return redirect()->route('viajes.index');
     }
 }
