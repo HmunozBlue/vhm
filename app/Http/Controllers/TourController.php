@@ -7,6 +7,7 @@ use App\Models\travelAllowance;
 use App\Models\Vehicles;
 use App\Models\boxcars;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TourController extends Controller
 {
@@ -21,7 +22,12 @@ class TourController extends Controller
      */
     public function index()
     {
-        $tour = tour::paginate(5);
+        $tour = DB::table('tours')
+        ->select('tours.id','tours.guies','tours.amount','travel_allowances.tipeTrip','vehicles.carPlate','tours.comment')
+        ->leftJoin('travel_allowances', 'travel_allowances.id', '=', 'tours.tipeTour')
+        ->join('vehicles', 'vehicles.id', '=', 'tours.vehicleId')
+        ->get();
+        //$tour = tour::paginate(5);
         return view('viajes.index',compact('tour'));
     }
 

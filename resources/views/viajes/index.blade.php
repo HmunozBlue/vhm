@@ -32,8 +32,8 @@
                 <td>{{ $tours->id }}</td>
                 <td>{{ $tours->guies }}</td>
                 <td>{{ $tours->amount }}</td>
-                <td>{{ $tours->tipeTour }}</td>
-                <td>{{ $tours->vehicleId }}</td>
+                <td>{{ $tours->tipeTrip }}</td>
+                <td>{{ $tours->carPlate }}</td>
                 <td>{{ $tours->comment }}</td>
                 <td>
                     @can('editar-persona')
