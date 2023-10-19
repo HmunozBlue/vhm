@@ -23,14 +23,14 @@ class TourController extends Controller
     public function index()
     {
         $tour = DB::table('tours')
-        ->select('tours.id','tours.guies','tours.amount','travel_allowances.tipeTrip','vehicles.carPlate','tours.comment')
+        ->select('tours.id','tours.guies','tours.amount','travel_allowances.tipeTrip','vehicles.carPlate','tours.comment','tours.created_at')
         ->leftJoin('travel_allowances', 'travel_allowances.id', '=', 'tours.tipeTour')
         ->join('vehicles', 'vehicles.id', '=', 'tours.vehicleId')
         ->get();
         //$tour = tour::paginate(5);
         return view('viajes.index',compact('tour'));
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
