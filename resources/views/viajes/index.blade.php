@@ -24,6 +24,7 @@
         <th>tipo</th>
         <th>Vehiculo</th>
         <th>comentario</th>
+        <th>Fecha Viaje</th>
         <th>Acciones</th>
     </thead>
     <tbody>
@@ -35,6 +36,7 @@
                 <td>{{ $tours->tipeTrip }}</td>
                 <td>{{ $tours->carPlate }}</td>
                 <td>{{ $tours->comment }}</td>
+                <td>{{ $tours->created_at }}</td>
                 <td>
                     @can('editar-persona')
                             <a class="btn btn-primary" href="{{ route('viajes.edit', $tours->id) }}">Editar</a>
