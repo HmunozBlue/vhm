@@ -384,7 +384,7 @@ return [
                 [
                     'text' => 'Pagos Asistentes',
                     'url'  => 'ayudantes',
-                    'icon' => 'fas fa-globe-americas',
+                    'icon' => 'fas fa-money-bill-alt',
                 ],
             ],
         ],

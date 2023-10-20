@@ -14,6 +14,7 @@ use App\Http\Controllers\TravelAllowanceController;
 use App\Http\Controllers\BillingController;
 use App\Http\Controllers\TourController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\AssitantController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,4 +47,5 @@ Route::group(['middelware' => ['auth']], function(){
     Route::resource('facturas', BillingController::class);
     Route::resource('viajes', TourController::class);
     Route::resource('pagos', PaymentController::class);
+    Route::resource('ayudantes', AssitantController::class);
 });
