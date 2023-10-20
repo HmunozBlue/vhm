@@ -328,6 +328,16 @@ return [
             'icon' => 'fas fa-restroom',
         ],
         [
+            'text' => 'Socios de negocios',
+            'url'  => 'socios',
+            'icon' => 'fas fa-hands-helping',
+        ],
+        [
+            'text' => 'Factura',
+            'url'  => 'facturas',
+            'icon' => 'fas fa-file-invoice',
+        ],
+        [
             'text' => 'Transporte',
             'icon' => 'fas fa-truck-moving',
             'submenu'  => [
@@ -342,11 +352,6 @@ return [
                     'icon' => 'fas fa-truck-loading',
                 ]
             ],
-        ],
-        [
-            'text' => 'Socios de negocios',
-            'url'  => 'socios',
-            'icon' => 'fas fa-hands-helping',
         ],
         [
             'text' => 'Viajes',
@@ -366,16 +371,23 @@ return [
             ],
         ],
         [
-            'text' => 'Factura',
-            'url'  => 'facturas',
-            'icon' => 'fas fa-file-invoice',
-        ],
-        [
             'text' => 'Pagos',
-            'url'  => 'pagos',
             'icon' => 'fas fa-money-bill-wave',
             'can'  => 'crear-rol',
-        ]
+            'submenu'  => [
+                [
+                    'text' => 'Pagos Pilotos',
+                    'url'  => 'pagos',
+                    'icon' => 'far fa-money-bill-alt',
+                    'can'  => 'crear-rol',
+                ],
+                [
+                    'text' => 'Pagos Asistentes',
+                    'url'  => 'ayudantes',
+                    'icon' => 'fas fa-globe-americas',
+                ],
+            ],
+        ],
     ],
 
     /*
