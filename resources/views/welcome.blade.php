@@ -75,7 +75,7 @@
                                     <!-- Main-menu -->
                                     <!--<div class="main-menu d-none d-lg-block">
                                         <nav> 
-                                            <ul id="navigation">                                                                                          
+                                            <ul id="navigation">
                                                 <li><a href="{{ route('welcome') }}">Home</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
@@ -252,102 +252,54 @@
                                 <div class="col-lg-12">
                                     <!-- Section Tittle -->
                                     <div class="section-tittle mb-50">
-                                        <span>Get a Qote For Free</span>
-                                        <h2>Request a Free Quote</h2>
-                                        <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for.</p>
+                                        <span>Contactenos</span>
+                                        <h2>Solicite una cotización gratuita</h2>
+                                        <p>¡Escríbenos! Nosotros te respondemos y nos encargamos de tu cotización. </p>
                                     </div>
                                 </div>
                             </div>
                             <!-- form -->
-                            <form action="#" class="contact-form">
+                            {{ Form::open(array('route' => 'contacto.index', 'method'=>'POST', 'class' => 'contact-form')) }}
                                 <div class="row ">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-form">
-                                            <input type="text" placeholder="Name">
+                                            <input type="text" id="name" name="name" placeholder="Nombre" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-form">
-                                            <input type="text" placeholder="Email">
+                                            <input type="email" id="email" name="email" placeholder="email" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="input-form">
-                                            <input type="text" placeholder="Contact Number">
+                                            <input type="number" id="phone" name="phone" placeholder="Telefono" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="select-items">
-                                            <select name="select" id="select1">
-                                                <option value="">Freight Type</option>
-                                                <option value="">Catagories One</option>
-                                                <option value="">Catagories Two</option>
-                                                <option value="">Catagories Three</option>
-                                                <option value="">Catagories Four</option>
+                                            <select id="tipeCharge" name="tipeCharge" id="tipeCharge">
+                                                <option value="carga">Transporte de Carga</option>
+                                                <option value="Flete">Fletes</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-form">
-                                            <input type="text" placeholder="City of Departure">
+                                            <input id="city" name="city" type="text" placeholder="Ciudad o departamento">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="input-form">
-                                            <input type="text" placeholder="Incoterms">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="input-form">
-                                            <input type="text" placeholder="Weight">
-                                        </div>
-                                    </div>
-                                    <!-- Height Width length -->
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="input-form">
-                                            <input type="text" placeholder="Height">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="input-form">
-                                            <input type="text" placeholder="Width">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="input-form">
-                                            <input type="text" placeholder="length">
-                                        </div>
-                                    </div>
-                                    <!-- Radio Button -->
                                     <div class="col-lg-12">
-                                        <div class="radio-wrapper mb-30 mt-15">
-                                            <label>Extra services:</label>
-                                            <div class="select-radio">
-                                                <div class="radio">
-                                                    <input id="radio-1" name="radio" type="radio" checked="">
-                                                    <label for="radio-1" class="radio-label">Freight</label>
-                                                </div>
-                                                <div class="radio">
-                                                    <input id="radio-2" name="radio" type="radio">
-                                                    <label for="radio-2" class="radio-label">Express Delivery</label>
-                                                </div>
-                                                <div class="radio">
-                                                    <input id="radio-4" name="radio" type="radio">
-                                                    <label for="radio-4" class="radio-label">Insurance</label>
-                                                </div>
-                                                <div class="radio">
-                                                    <input id="radio-5" name="radio" type="radio">
-                                                    <label for="radio-5" class="radio-label">Packaging</label>
-                                                </div>
-                                            </div>
-                                        </div> 
+                                        <div class="input-form">
+                                            <input type="textarea" id="comment" name="comment" placeholder="Dejanos un comentario">
+                                        </div>
                                     </div>
                                     <!-- Button -->
                                     <div class="col-lg-12">
-                                        <button name="submit" class="submit-btn">Request a Quote</button>
+                                        <button type="submit" class="submit-btn">Solicitar presupuesto</button>
                                     </div>
                                 </div>
-                            </form>	
+                            {{ Form::close() }}
                         </div>
                     </div>
                 </div>
@@ -361,7 +313,7 @@
                     <div class="cl-xl-7 col-lg-8 col-md-10">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
-                            <span>Our Team Mambers</span>
+                            <span>Nuestro equipo</span>
                             <h2>What We Can Do For You</h2>
                         </div> 
                     </div>
@@ -372,17 +324,7 @@
                             <div class="team-img">
                                 <img src="assets/img/gallery/team1.png" alt="">
                                 <div class="team-caption">
-                                    <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    <h3>Pilotos capacitados</h3>
                                 </div>
                             </div>
                         </div>
@@ -392,17 +334,7 @@
                             <div class="team-img">
                                 <img src="assets/img/gallery/team2.png" alt="">
                                 <div class="team-caption">
-                                    <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    <h3>Cuidado del producto</h3>
                                 </div>
                             </div>
                         </div>
@@ -412,17 +344,7 @@
                             <div class="team-img">
                                 <img src="assets/img/gallery/team3.png" alt="">
                                 <div class="team-caption">
-                                    <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    <h3>Entrega en sitio</h3>
                                 </div>
                             </div>
                         </div>

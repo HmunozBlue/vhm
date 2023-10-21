@@ -15,6 +15,7 @@ use App\Http\Controllers\BillingController;
 use App\Http\Controllers\TourController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\AssitantController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +27,8 @@ use App\Http\Controllers\AssitantController;
 |
 */
 Route::get('/welcome', [App\Http\Controllers\HomeController::class, 'index'])->name('welcome');
+
+Route::resource('contacto', ContactController::class);
 
 Route::get('/', function () {
     return view('welcome');
