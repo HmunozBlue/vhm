@@ -307,11 +307,6 @@ return [
             'text' => 'search',
         ],
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
             'text' => 'Usuarios',
             'url'  => 'usuarios',
             'icon' => 'fas fa-users',
