@@ -10,7 +10,7 @@
         <meta name="author" content="HamiltonMunoz">
         <link rel="manifest" href="site.webmanifest">
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    
+
         <!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -314,8 +314,8 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
                             <span>Nuestro equipo</span>
-                            <h2>What We Can Do For You</h2>
-                        </div> 
+                            <h2>Al servicio desde la carga hasta la entrega de su producto.</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
