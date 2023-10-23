@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tours', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('guies')->unsigned()->nullable();
-            $table->decimal('amount', 5, 2)->nullable();
+            $table->decimal('amount', 8,2)->nullable();
             $table->integer('tipeTour')->unsigned()->nullable();
             $table->integer('vehicleId')->unsigned()->nullable();
             $table->integer('boxCarId')->unsigned();
