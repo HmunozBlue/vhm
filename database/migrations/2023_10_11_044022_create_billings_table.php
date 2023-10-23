@@ -30,7 +30,7 @@ return new class extends Migration
             $table->smallInteger('amount')->nullable();
             $table->text('description')->nullable();
             $table->decimal('unitPrice', 8,2)->nullable();
-            $table->decimal('price', 8,6)->nullable();
+            $table->decimal('price', 8,2)->nullable();
             $table->string('typeTax', 20)->nullable();
             $table->decimal('amountTaxable', 8,2)->nullable();
             $table->decimal('amountTax', 8,2)->nullable();
