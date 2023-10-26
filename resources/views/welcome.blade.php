@@ -48,7 +48,7 @@
                                 <div class="header-info-left">
                                     <ul>     
                                         <li>Telefono de Contacto: +502 4627-8434</li>
-                                        <li>Correo de Contacto: victormarroquin@gmail.com</li>
+                                        <li>Correo de Contacto: administracion@transportesvhm.com</li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
