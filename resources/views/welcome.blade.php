@@ -131,7 +131,8 @@
                             </div>
                             <div class="info-caption">
                                 <p>Contactanos en cualquier momento</p>
-                                <span>+502 4627-8434</span>
+                                <span>+502 4627-8434</span></br>
+                                <span>administracion@transportesvhm.com</span>
                             </div>
                         </div>
                     </div>
