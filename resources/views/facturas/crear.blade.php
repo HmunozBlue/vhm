@@ -34,7 +34,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="rol">Tipo: </label>
-                {!! Form::file('XML', null, array('class' => 'form-control')) !!}
+                {{--  
+                    {!! Form::file('XML', null, array('class' => 'form-control', 'accept' => 'text/xml')) !!}
+                --}}
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="XML">Subir</label>
+                    <input type="file" name="XML" class="form-control" id="XML" accept="text/xml" required>
+                  </div>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
