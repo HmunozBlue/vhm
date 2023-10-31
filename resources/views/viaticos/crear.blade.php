@@ -35,7 +35,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="rol">Tipo: </label>
-                {!! Form::select('tipeTrip',['Largo'=> 'Viaje Largo', 'Corto'=>'Viaje Corto']) !!}
+                {!! Form::select('tipeTrip',['Corto'=>'Viaje Corto','Medio'=>'Viaje Medio','Largo'=> 'Viaje Largo'],  array('class' => 'form-control'))!!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
