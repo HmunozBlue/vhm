@@ -18,7 +18,7 @@ class BoxCarController extends Controller
      */
     public function index()
     {
-        $boxcars = boxcars::paginate(5);
+        $boxcars = boxcars::paginate(25);
         return view('furgones.index',compact('boxcars'));
     }
 

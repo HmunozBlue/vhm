@@ -18,7 +18,7 @@ class TravelAllowanceController extends Controller
      */
     public function index()
     {
-        $viaticos = travelAllowance::paginate(5);
+        $viaticos = travelAllowance::paginate(25);
         return view('viaticos.index',compact('viaticos'));
     }
 

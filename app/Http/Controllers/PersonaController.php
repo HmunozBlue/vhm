@@ -25,7 +25,7 @@ class PersonaController extends Controller
      */
     public function index()
     {
-        $personas = Persona::paginate(5);
+        $personas = Persona::paginate(50);
         return view('personas.index',compact('personas'));
     }
 

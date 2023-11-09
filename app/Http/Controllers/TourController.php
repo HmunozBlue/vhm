@@ -6,6 +6,7 @@ use App\Models\tour;
 use App\Models\travelAllowance;
 use App\Models\Vehicles;
 use App\Models\boxcars;
+use App\Models\Persona;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -38,10 +39,11 @@ class TourController extends Controller
      */
     public function create()
     {
-        $tipeTrips = travelAllowance::paginate(5);
+        $tipeTrips = travelAllowance::paginate(25);
         $vehicles = Vehicles::all();
         $boxCars = boxcars::all();
-        return view('viajes.crear',compact('tipeTrips','vehicles','boxCars'));
+        $personas = Persona::all();
+        return view('viajes.crear',compact('tipeTrips','vehicles','boxCars','personas'));
     }
 
     /**
@@ -96,7 +98,7 @@ class TourController extends Controller
      */
     public function edit(tour $viaje)
     {
-        $tipeTrips = travelAllowance::paginate(5);
+        $tipeTrips = travelAllowance::paginate(25);
         $vehicles = Vehicles::all();
         $boxCars = boxcars::all();
         return view('viajes.editar', compact('viaje','tipeTrips','vehicles','boxCars'));

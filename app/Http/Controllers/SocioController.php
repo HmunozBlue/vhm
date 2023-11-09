@@ -18,7 +18,7 @@ class SocioController extends Controller
      */
     public function index()
     {
-        $partners = Partners::paginate(5);
+        $partners = Partners::paginate(25);
         return view('socios.index',compact('partners'));
     }
 
