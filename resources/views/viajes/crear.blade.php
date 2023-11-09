@@ -67,19 +67,42 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="rol">IdPiloto: </label>
-                {!! Form::number('driverId', null, array('class' => 'form-control')) !!}
+                {{--{!! Form::number('driverId', null, array('class' => 'form-control')) !!} --}}
+                <select name="driverId" id="driverId" class="form-control" required>
+                    @foreach ($personas as $persona)
+                        <option value="{{ $persona->id }}"> {{ $persona->primerNombre }}-{{ $persona->primerApellido }}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="rol">Ayudante: </label>
-                {!! Form::number('asistantId', null, array('class' => 'form-control')) !!}
+                {{--  {!! Form::number('asistantId', null, array('class' => 'form-control')) !!}--}}
+                <select name="asistantId" id="asistantId" class="form-control">
+                <option value="">Seleccione una opción</option>
+                    @foreach ($personas as $persona)
+                        <option value="{{ $persona->id }}"> {{ $persona->primerNombre }}-{{ $persona->primerApellido }}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="rol">Ayudante: </label>
-                {!! Form::number('asistantId1', null, array('class' => 'form-control')) !!}
+                {{-- {!! Form::number('asistantId1', null, array('class' => 'form-control')) !!}  --}}
+                <select name="asistantId1" id="asistantId1" class="form-control">
+                    <option value="">Seleccione una opción</option>
+                    @foreach ($personas as $persona)
+                        <option value="{{ $persona->id }}"> {{ $persona->primerNombre }}-{{ $persona->primerApellido }}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="rol">Ayudante: </label>
-                {!! Form::number('asistantId2', null, array('class' => 'form-control')) !!}
+                {{-- {!! Form::number('asistantId2', null, array('class' => 'form-control')) !!}  --}}
+                <select name="asistantId2" id="asistantId2" class="form-control">
+                    <option value="">Seleccione una opción</option>
+                    @foreach ($personas as $persona)
+                        <option value="{{ $persona->id }}"> {{ $persona->primerNombre }}-{{ $persona->primerApellido }}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="rol">Observaciones: </label>

@@ -18,7 +18,7 @@ class BillingController extends Controller
      */
     public function index()
     {
-        $billing = billing::paginate(5);
+        $billing = billing::paginate(25);
         return view('facturas.index',compact('billing'));
     }
 
