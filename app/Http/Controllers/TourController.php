@@ -70,7 +70,6 @@ class TourController extends Controller
         $newTour->driverId = $request->driverId;
         $newTour->asistantId = $request->asistantId;
         $newTour->asistantId1 = $request->asistantId1;
-        $newTour->asistantId1 = $request->asistantId1;
         $newTour->asistantId2 = $request->asistantId2;
         $newTour->comment = $request->comment;
 
