@@ -31,7 +31,6 @@
                     <td>{{ $usuario->id }}</td>
                     <td>{{ $usuario->name }}</td>
                     <td>{{ $usuario->email }}</td>
-                    <td style="text-align:left">{{ $usuario->rol }}</td>
                     <td>
                         @if (!empty($usuario->getRoleNames()))
                             @foreach ($usuario->getRoleNames() as $rolName)
