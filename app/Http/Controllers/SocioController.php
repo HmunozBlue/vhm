@@ -40,8 +40,8 @@ class SocioController extends Controller
      */
     public function store(Request $request)
     {
-        /*dd($request->all());
-        die();*/
+        //dd($request->all());
+
         request()->validate([
             'ComercialName' => 'required',
             'nit' => 'required',
@@ -54,6 +54,8 @@ class SocioController extends Controller
         $newPartner->adress = $request->fiscalName;
         $newPartner->phone = $request->phone;
         $newPartner->email = $request->email;
+        $newPartner->latitude = $request->latitude;
+        $newPartner->longitude = $request->longitude;
         $newPartner->save();
 
         return redirect()->route('socios.index');
