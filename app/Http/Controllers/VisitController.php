@@ -9,6 +9,9 @@ use App\Models\User;
 use App\Models\Persona;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Events\VisitFinish;
+use Illuminate\Support\Facades\Log;
+
 
 class VisitController extends Controller
 {
@@ -143,6 +146,10 @@ class VisitController extends Controller
         $visit->check_out_time = now();
         $visit->status = 'completada';
         $visit->save();
+
+        Log::info('Evento lanzado para visita ID: '.$visit->id);
+
+        $send = event(new VisitFinish($visit));
 
         return back()->with('success', 'Salida registrada.');
     }
