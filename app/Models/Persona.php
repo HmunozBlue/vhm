@@ -10,4 +10,12 @@ class Persona extends Model
     protected $guarded = [];
 
     use HasFactory;
+
+    /**
+     * Una persona puede tener muchas visitas
+     */
+    public function visits()
+    {
+        return $this->hasMany(Visit::class, 'persona_id');
+    }
 }

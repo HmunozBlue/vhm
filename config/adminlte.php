@@ -328,6 +328,11 @@ return [
             'icon' => 'fas fa-hands-helping',
         ],
         [
+            'text' => 'Visitas',
+            'url'  => 'visitas',
+            'icon' => 'fas fa-map-signs',
+        ],
+        [
             'text' => 'Factura',
             'url'  => 'facturas',
             'icon' => 'fas fa-file-invoice',

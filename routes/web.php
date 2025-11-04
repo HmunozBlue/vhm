@@ -16,6 +16,7 @@ use App\Http\Controllers\TourController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\AssitantController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\VisitController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,4 +52,9 @@ Route::group(['middelware' => ['auth']], function(){
     Route::resource('viajes', TourController::class);
     Route::resource('pagos', PaymentController::class);
     Route::resource('ayudantes', AssitantController::class);
+    Route::resource('visitas', VisitController::class);
+    // Ruta para hacer check-in de una visita
+Route::get('/visitas/{id}/check-in', [VisitController::class, 'checkIn'])->name('visitas.checkIn');
+    // Ruta para hacer check-out de una visita
+Route::get('/visitas/{id}/check-out', [VisitController::class, 'checkOut'])->name('visitas.checkOut');
 });
