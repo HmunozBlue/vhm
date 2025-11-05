@@ -8,11 +8,11 @@
 
 
 @section('content_header')
-    <h1>Administrador-VHM</h1>
+    <h1 class="text-2xl font-semibold mb-6">Bienvenido {{ Auth::user()->name }}</h1>
 @stop
 
 @section('content')
-    
+@livewire('dashboard-supervisor')
 @stop
 
 @section('js')

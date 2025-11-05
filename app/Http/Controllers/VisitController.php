@@ -26,22 +26,32 @@ class VisitController extends Controller
      */
     public function index()
     {
-         /*if ($user->hasRole('Supervisor')) {
-            $visits = Visit::where('supervisor_id', $user->id)->get();
-        } elseif ($user->hasRole('Tecnico')) {
-            $visits = Visit::where('technician_id', $user->id)
-                ->whereDate('visit_date', today())->get();
-        } else {
-            $visits = Visit::all();
-        }*/
-        //$visits = Visit::paginate(25);
-        //$partners = Partners::all();
-        
-         // Carga las visitas con las relaciones
-        
+        /*// Carga las visitas con las relaciones de socio y persona
         $visits = Visit::with(['partner','persona'])->get();
+        return view('visitas.index',compact('visits'));*/
+        $user = Auth::user();
 
-        return view('visitas.index',compact('visits'));   
+        // Si el usuario es administrador, ve todas las visitas
+        if ($user->hasRole('administrador')) {
+            $visits = Visit::with(['partner', 'persona'])->get();
+        } 
+        // Si es supervisor, solo sus visitas
+        elseif ($user->hasRole('Supervisor')) {
+            $visits = Visit::with(['partner', 'persona'])
+                ->where('supervisor_id', $user->id)
+                ->get();
+        } elseif ($user->hasRole('Tecnico')) {
+            // Obtener el ID de la persona asociada al usuario
+            $personaId = $user->persona ? $user->persona->id : null;
+            // Obtener las visitas asignadas al técnico
+            $visits = Visit::with(['partner', 'persona'])
+                ->where('technician_id', $personaId)
+                ->get();
+        } else {
+            // Otros roles no tienen acceso
+            abort(403, 'No tienes permiso para ver estas visitas.');
+        }
+        return view('visitas.index', compact('visits'));
     }
 
     /**
