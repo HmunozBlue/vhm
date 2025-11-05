@@ -26,4 +26,9 @@ class Visit extends Model
     {
         return $this->belongsTo(Persona::class, 'technician_id');
     }
+
+    public function tecnico()
+    {
+        return $this->belongsTo(Persona::class, 'technician_id');
+    }
 }
