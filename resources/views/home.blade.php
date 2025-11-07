@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Administrador-VHM')
+@section('title', 'Administrador-SkyNet S. A.')
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">

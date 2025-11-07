@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Alta de usuarios-VHM')
+@section('title', 'Alta de usuarios-SkyNet S. A.')
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
@@ -8,7 +8,7 @@
 
 
 @section('content_header')
-    <h1>Alta de usuarios-VHM</h1>
+    <h1>Alta de usuarios-SkyNet S. A.</h1>
 @stop
 
 @section('content')
