@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'CrearPersonas-VHM')
+@section('title', 'CrearPersonas-SkyNet S. A.')
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
@@ -8,7 +8,7 @@
 
 
 @section('content_header')
-    <h1>CrearPersonas-VHM</h1>
+    <h1>CrearPersonas-SkyNet S. A.</h1>
 @stop
 
 @section('content')
@@ -25,6 +25,12 @@
     @endif
     {!! Form::open(array('route' => 'personas.store', 'method'=>'POST')) !!}
     <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <label for="rol">Id Usuario</label>
+                {!! Form::number('user_id', null, array('class' => 'form-control')) !!}
+            </div>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="rol">Primer Nombre</label>
