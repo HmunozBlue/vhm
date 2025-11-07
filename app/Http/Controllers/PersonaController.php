@@ -50,6 +50,7 @@ class PersonaController extends Controller
         /*dd($request->all());
         die();*/
         request()->validate([
+            'user_id' => 'required',
             'primerNombre' => 'required',
             'primerApellido' => 'required',
             'fechaNacimiento' => 'required',
@@ -59,19 +60,8 @@ class PersonaController extends Controller
             'departamento' => 'required'
         ]);
 
-        /*Persona::create([
-            'primerNombre' => request('primerNombre'),
-            'segundoNombre' => request('segundoNombre'),
-            'primerApellido' => request('primerApellido'),
-            'segundoApellido' => request('segundoApellido'),
-            'genero' => request('genero'),
-            'CUI' => request('CUI'),
-            'NIT' => request('NIT'),
-            'pais' => request('pais'),
-            'departamento' => request('departamento'),
-        ]);*/
-
         $newPersona = new Persona();
+        $newPersona->user_id = $request->user_id;
         $newPersona->primerNombre = $request->primerNombre;
         $newPersona->segundoNombre = $request->segundoNombre;
         $newPersona->primerApellido = $request->primerApellido;
