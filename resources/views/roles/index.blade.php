@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Roles-VHM')
+@section('title', 'Roles-SkyNet S. A.')
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
@@ -8,7 +8,7 @@
 
 
 @section('content_header')
-    <h1>Roles-VHM</h1>
+    <h1>Roles-SkyNet S. A.</h1>
 @stop
 
 @section('content')

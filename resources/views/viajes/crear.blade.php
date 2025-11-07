@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'CrearViaticos-VHM')
+@section('title', 'CrearViaticos-SkyNet S. A.')
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
@@ -8,7 +8,7 @@
 
 
 @section('content_header')
-    <h1>Crear Viáticos-VHM</h1>
+    <h1>Crear Viáticos-SkyNet S. A.</h1>
 @stop
 
 @section('content')

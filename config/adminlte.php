@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Transportes VHM',
+    'title' => 'SkyNet S. A.',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Tranportes</b>VHM',
+    'logo' => '<b>SkyNet S. A.</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -332,7 +332,7 @@ return [
             'url'  => 'visitas',
             'icon' => 'fas fa-map-signs',
         ],
-        [
+        /*[
             'text' => 'Factura',
             'url'  => 'facturas',
             'icon' => 'fas fa-file-invoice',
@@ -387,7 +387,7 @@ return [
                     'icon' => 'fas fa-money-bill-alt',
                 ],
             ],
-        ],
+        ],*/
     ],
 
     /*
